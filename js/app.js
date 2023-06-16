@@ -53,8 +53,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    let d = a + b ;
-    let e = a*b ;
+    let d = sum(a, b)[0] ;
+    let e = multiply(a,b)[0];
     let g= sum(d,c)[0];
     let h = multiply(e,c)[0];
     let f = [g,h,a+" and "+b+" and "+c+" sum to "+g+".","The product of "+a+" and "+b+" and "+c+" is "+h+"."]
@@ -81,6 +81,7 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+    
 
 }
 
