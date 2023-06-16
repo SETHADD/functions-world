@@ -81,12 +81,13 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    let a = sum(sumArr[0],sumArr[1])[0]
-    let b = sum(a, sumArr[2])[0]
-    let c = [b,sumArr[0]+","+sumArr[1]+","+sumArr[2]+" was passed in as an array of numbers, and "+ b +" is their sum."]
-    return c;
-
+        let a = sum(sumArr[0],sumArr[1])[0]
+        let b = sum(a, sumArr[2])[0]
+        let c = [b,sumArr[0]+","+sumArr[1]+","+sumArr[2]+" was passed in as an array of numbers, and "+ b +" is their sum."]
+        return c
 }
+    
+
 console.log(sumArray(testArray))
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -105,12 +106,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
 
+function multiplyArray(multArr) { //eslint-disable-line
+        let a = multiply(multArr[0],multArr[1])[0]
+        let b = multiply(a, multArr[2])[0]
+        let c = [b, "The numbers "+multArr[0]+","+multArr[1]+","+multArr[2]+" have a product of "+b+"."]
+        return c
 }
 
-// Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+console.log(multiplyArray(testArray))
+
+
+
+//Array(); uncomment it to run it
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -141,3 +150,6 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 // testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+
+
+
